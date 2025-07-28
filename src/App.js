@@ -2,7 +2,8 @@ import React,{useState} from 'react';
 import './App.css';
 import MovieCard from './MovieCard';
 
-const API_URL='http://www.omdbapi.com/?i=tt3896198&apikey=1357519e';
+const API_KEY = process.env.REACT_APP_OMDB_API_KEY;
+const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
 
 function App() {
 
